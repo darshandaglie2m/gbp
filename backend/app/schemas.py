@@ -3,6 +3,8 @@ from pydantic import BaseModel, EmailStr
 class ProjectBase(BaseModel):
     name: str
     company_details: str | None = None
+    gbp_location_id: str | None = None
+    ga_property_id: str | None = None
 
 class ProjectCreate(ProjectBase):
     pass
