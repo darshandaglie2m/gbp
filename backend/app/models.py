@@ -14,5 +14,8 @@ class Project(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable=False)
     company_details = Column(Text)
+    
+gbp_location_id = Column(String, index=True)
+ga_property_id = Column(String, index=True)
     owner_id = Column(Integer, ForeignKey('users.id'))
     owner = relationship('User', back_populates='projects')

@@ -15,6 +15,8 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/gbp
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GOOGLE_SERVICE_ACCOUNT_FILE=${GOOGLE_SERVICE_ACCOUNT_FILE}
+
     depends_on:
       - db
     ports:
