@@ -83,6 +83,7 @@ export default function App() {
           <pre style={{ whiteSpace: 'pre-wrap' }}>{auditResult.recommendations}</pre>
         </Box>
       )}
+
     </Container>
   );
 }

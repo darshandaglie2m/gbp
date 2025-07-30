@@ -9,6 +9,7 @@ A dockerized web application for managing Google Business Profile audits and ana
 - **OpenAI**: Generates recommendations for improving Google Business Profiles.
 - **Google APIs**: Pulls GBP details and reviews for audit.
 
+
 ## Development
 
 ```bash
@@ -29,5 +30,7 @@ Run backend type checks:
 ```bash
 python -m py_compile backend/app/*.py
 ```
+
+=======
 
 Access the API at `http://localhost:8000` and the frontend at `http://localhost:3000`.
